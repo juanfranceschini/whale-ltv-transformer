@@ -87,13 +87,7 @@ whale-ltv-transformer/
 └── results/                # Model outputs and results
 ```
 
-## 📚 Documentation
-
-### 📋 Comprehensive Reports
-
-- **[Model Objectives and Variables Report](docs/model_objectives_and_variables_report.md)** - Detailed explanation of model objectives, variable selection rationale, and business context
-- **[Technical Appendix](docs/technical_appendix.md)** - Implementation details, architecture specifications, and deployment considerations
-- **[Business Impact Analysis](docs/business_impact_analysis.md)** - Financial impact, ROI calculations, and strategic applications
+## �� Documentation
 
 ### 🔧 Technical Documentation
 
@@ -200,7 +194,6 @@ mypy src/
 ## 📊 Evaluation Notebooks
 
 - **[Comprehensive Evaluation](notebooks/whale_ltv_evaluation.ipynb)** - Complete model analysis and visualization
-- **[Path-Robust Notebook](notebooks/whale_ltv_evaluation_path_robust.ipynb)** - Works from any directory
 - **[Baseline Comparison](notebooks/baseline_comparison.ipynb)** - Model vs. traditional ML approaches
 
 ## 🤝 Contributing
@@ -230,9 +223,9 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📞 Contact
 
-- **Project Link**: [https://github.com/yourusername/whale-ltv-transformer](https://github.com/yourusername/whale-ltv-transformer)
-- **Issues**: [GitHub Issues](https://github.com/yourusername/whale-ltv-transformer/issues)
-- **Discussions**: [GitHub Discussions](https://github.com/yourusername/whale-ltv-transformer/discussions)
+- **Project Link**: [https://github.com/juanfranceschini/whale-ltv-transformer](https://github.com/juanfranceschini/whale-ltv-transformer)
+- **Issues**: [GitHub Issues](https://github.com/juanfranceschini/whale-ltv-transformer/issues)
+- **Discussions**: [GitHub Discussions](https://github.com/juanfranceschini/whale-ltv-transformer/discussions)
 
 ## 📈 Roadmap
 
