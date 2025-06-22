@@ -18,16 +18,6 @@ The Whale LTV Transformer is an advanced machine learning model that predicts cu
 - **Joint Training**: Simultaneous LTV regression and whale classification
 - **Production Ready**: PyTorch Lightning framework with comprehensive testing
 
-### 📊 Model Performance
-
-| Metric | Value |
-|--------|-------|
-| **LTV R² Score** | 0.885 (88.5%) |
-| **Whale Detection Rate** | 93.6% |
-| **Revenue Prediction Error** | 2.9% |
-| **Whale Classification AUC** | 0.9997 |
-| **Precision** | 99.0% |
-
 ## 🚀 Quick Start
 
 ### Installation
@@ -87,15 +77,6 @@ whale-ltv-transformer/
 └── results/                # Model outputs and results
 ```
 
-## �� Documentation
-
-### 🔧 Technical Documentation
-
-- **[Data Preparation Guide](docs/data_preparation.md)** - Step-by-step data processing pipeline
-- **[Model Architecture](docs/model_architecture.md)** - Detailed model specifications
-- **[Training Guide](docs/training_guide.md)** - Training configuration and best practices
-- **[Evaluation Guide](docs/evaluation_guide.md)** - Performance metrics and analysis
-
 ## 🏗️ Model Architecture
 
 ### Core Components
@@ -127,41 +108,6 @@ whale-ltv-transformer/
 2. **Sequence Creation**: Create customer order sequences with temporal features
 3. **Feature Engineering**: Extract customer-level features from sequences
 4. **Target Calculation**: Compute 90-day LTV and whale classification
-
-## 🎯 Business Applications
-
-### Marketing and Customer Acquisition
-- **Targeted Marketing**: Use predicted LTV for customer segmentation
-- **CAC Optimization**: Reduce acquisition costs for high-value customers
-- **Onboarding Personalization**: Customize experience based on predicted value
-
-### Customer Success and Retention
-- **Proactive Retention**: Identify at-risk high-value customers early
-- **Resource Allocation**: Optimize customer success team allocation
-- **Loyalty Programs**: Design tiered rewards based on predicted value
-
-### Revenue Optimization
-- **Pricing Strategy**: Adjust pricing based on predicted customer value
-- **Revenue Forecasting**: Accurate 90-day revenue predictions
-- **Inventory Planning**: Better demand forecasting and stock management
-
-## 📈 Performance Results
-
-### Model Comparison
-
-| Model | LTV R² | Whale AUC | Revenue Error |
-|-------|--------|-----------|---------------|
-| **Whale LTV Transformer** | **0.885** | **0.9997** | **2.9%** |
-| XGBoost | 0.780 | 0.967 | 11.2% |
-| CatBoost | 0.795 | 0.971 | 10.8% |
-| Ensemble | 0.810 | 0.975 | 9.5% |
-
-### Business Impact
-
-- **93.6% whale detection rate** enables targeted retention strategies
-- **2.9% revenue prediction error** provides accurate financial forecasting
-- **99.0% precision** minimizes wasted resources on false positives
-- **10.5% performance improvement** over traditional methods
 
 ## 🛠️ Development
 
@@ -196,10 +142,6 @@ mypy src/
 - **[Comprehensive Evaluation](notebooks/whale_ltv_evaluation.ipynb)** - Complete model analysis and visualization
 - **[Baseline Comparison](notebooks/baseline_comparison.ipynb)** - Model vs. traditional ML approaches
 
-## 🤝 Contributing
-
-We welcome contributions! Please see our [Contributing Guide](CONTRIBUTING.md) for details.
-
 ### Development Setup
 
 ```bash
@@ -214,29 +156,12 @@ pre-commit install
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 🙏 Acknowledgments
-
-- **Olist** for providing the Brazilian E-Commerce dataset
-- **PyTorch Lightning** for the training framework
-- **Transformers** architecture from "Attention Is All You Need"
-- **Open Source Community** for various tools and libraries
-
 ## 📞 Contact
 
 - **Project Link**: [https://github.com/juanfranceschini/whale-ltv-transformer](https://github.com/juanfranceschini/whale-ltv-transformer)
-- **Issues**: [GitHub Issues](https://github.com/juanfranceschini/whale-ltv-transformer/issues)
-- **Discussions**: [GitHub Discussions](https://github.com/juanfranceschini/whale-ltv-transformer/discussions)
-
-## 📈 Roadmap
-
-- [ ] **Multi-modal Features**: Product categories and geographic data
-- [ ] **Online Learning**: Continuous model updates with concept drift detection
-- [ ] **API Deployment**: Production-ready inference API
-- [ ] **Dashboard Integration**: Real-time business intelligence dashboard
-- [ ] **A/B Testing Framework**: Model validation through controlled experiments
 
 ---
 
 **⭐ Star this repository if you find it useful!**
 
-*Built with ❤️ for the machine learning and e-commerce communities.* 
+*Open Source ❤️* 
