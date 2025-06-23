@@ -24,57 +24,78 @@ The Whale LTV Transformer is an advanced machine learning model that predicts cu
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/whale-ltv-transformer.git
+git clone https://github.com/juanfranceschini/whale-ltv-transformer.git
 cd whale-ltv-transformer
 
-# Install dependencies
-pip install -r requirements.txt
+# Option 1: Install as a package (recommended)
+pip install -e .
 
-# Download the Olist dataset
-python scripts/download_data.py
+# Option 2: Install dependencies only
+pip install -r requirements.txt
 ```
 
-### Data Preparation
+### Data Setup
 
 ```bash
-# Prepare the dataset
-python scripts/prepare_data.py
+# Download the Olist dataset from Kaggle and place CSV files in data/raw/
+# Then prepare the data:
+python -m src.data_prep
 ```
 
 ### Training
 
 ```bash
 # Train the model
-python scripts/train.py
+python -m src.train
+
+# Or use the console script (if installed as package)
+whale-ltv-train
+```
+
+### Quick Demo
+
+```bash
+# Run the example script to verify everything works
+python example_usage.py
 ```
 
 ### Evaluation
 
 ```bash
 # Run evaluation
-python scripts/evaluate.py
+python evaluate_model.py
 
 # Or open the Jupyter notebook
-jupyter notebook notebooks/whale_ltv_evaluation.ipynb
+jupyter notebook notebooks/whale_ltv_transformer_report.ipynb
 ```
 
 ## 📁 Project Structure
 
 ```
 whale-ltv-transformer/
-├── data/
-│   ├── raw/                 # Original Olist dataset
-│   └── processed/           # Processed data files
-├── src/
-│   ├── data/               # Data processing modules
-│   ├── models/             # Model architectures
-│   ├── training/           # Training scripts
-│   └── utils/              # Utility functions
-├── notebooks/              # Jupyter notebooks
-├── tests/                  # Unit tests
-├── docs/                   # Documentation
-├── scripts/                # Execution scripts
-└── results/                # Model outputs and results
+├── src/                    # Main source code
+│   ├── __init__.py        # Package exports
+│   ├── data_prep.py       # Data processing
+│   ├── train.py           # Training script
+│   ├── utils.py           # Utility functions
+│   └── models/            # Model implementations
+│       ├── __init__.py    # Model exports
+│       ├── transformer.py # Transformer model
+│       ├── datamodule.py  # PyTorch Lightning data module
+│       └── baselines.py   # Baseline models
+├── configs/               # Configuration files
+├── data/                  # Data directory
+│   ├── raw/              # Original Olist dataset
+│   └── processed/        # Processed data
+├── notebooks/            # Jupyter notebooks
+├── tests/               # Unit tests
+├── scripts/             # Utility scripts
+├── models/              # Trained models (created during training)
+├── setup.py             # Package setup
+├── requirements.txt     # Dependencies
+├── example_usage.py     # Example script
+├── INSTALLATION.md      # Detailed installation guide
+└── README.md           # Project documentation
 ```
 
 ## 🏗️ Model Architecture
