@@ -2,7 +2,7 @@
 data/raw/
 data/processed/
 
-# Models and checkpoints
+# Models and checkpoints (trained models)
 models/
 !src/models/
 *.pth
@@ -60,7 +60,7 @@ outputs/
 multirun/
 
 # Reports and figures
-reports/figures/
+reports/
 *.png
 *.jpg
 *.pdf
@@ -196,17 +196,17 @@ dmypy.json
 # Pyre type checker
 .pyre/
 
-# Documentation and personal content (hidden from public repo)
+# Personal content (hidden from public repo)
 docs/
 blog/
 PERSONAL_CONTENT_README.md
-personal_content_backup/
+scripts/manage_personal_content.py
 
-# Personal articles (hidden from public repo)
-docs/my_whale_ltv_journey.md
-docs/executive_summary.md
-docs/model_objectives_and_variables_report.md
-docs/technical_appendix.md
-docs/business_impact_analysis.md
-docs/model_validation_analysis.md
-docs/model_validation_protocol.md 
+# Training artifacts
+catboost_info/
+*.tsv
+*.json
+
+# Temporary files
+create_notebook.py
+create_path_robust_notebook.py 
