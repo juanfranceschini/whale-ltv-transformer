@@ -209,4 +209,11 @@ catboost_info/
 
 # Temporary files
 create_notebook.py
-create_path_robust_notebook.py 
+create_path_robust_notebook.py
+
+# Training outputs and results
+outputs/
+models/baseline_results.yaml
+models/test_results.yaml
+models/transformer_results.yaml
+models/validation_report.yaml 
